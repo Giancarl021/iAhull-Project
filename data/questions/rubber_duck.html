@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon"
+          href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Rubber_duck.svg/967px-Rubber_duck.svg.png"
+          type="image/x-icon"/>
+    <title>Rubber Duck</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffe200;
+            overflow: hidden;
+        }
+
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 50%;
+        }
+
+        div:before {
+            content: '';
+            position: absolute;
+            top: calc(50% - 471px);
+            left: calc(50% - 471px);
+            width: 894px;
+            height: 894px;
+            z-index: -1;
+            background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8314fe94-b860-4c27-8fff-ae7b14c6991d/d5kd2s3-94c5ba9f-7ace-46d2-9b45-17aeecaba7be.png/v1/fill/w_894,h_894,strp/speedlines_by_metallicadutch_d5kd2s3-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjAwMCIsInBhdGgiOiJcL2ZcLzgzMTRmZTk0LWI4NjAtNGMyNy04ZmZmLWFlN2IxNGM2OTkxZFwvZDVrZDJzMy05NGM1YmE5Zi03YWNlLTQ2ZDItOWI0NS0xN2FlZWNhYmE3YmUucG5nIiwid2lkdGgiOiI8PTIwMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.m6sMLyZhTIJP4Z4S_NM317C7ZzSMppLZWVpVZEJeuAk");
+            animation: pow 10s infinite linear;
+        }
+
+        img {
+            height: 100%;
+            width: auto;
+            transition: .7s;
+        }
+
+        @keyframes pow {
+            0% {
+                transform: scale(1) rotate(0deg);
+            }
+            50% {
+                transform: scale(1.5) rotate(180deg);
+            }
+            100% {
+                transform: scale(1) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Rubber_duck.svg/967px-Rubber_duck.svg.png"
+             style="filter: brightness(0)"
+             alt="O grandioso pato de borracha!" onmouseenter="this.style.transform = 'scale(1.3)'; this.style.filter = 'brightness(1)'" onmouseleave="this.style.transform = 'scale(1)'; this.style.filter = 'brightness(0)'"/>
+    </div>
+</body>
+</html>
